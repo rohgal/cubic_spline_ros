@@ -1,0 +1,18 @@
+<launch>
+
+  <arg name="rviz" default="true" />
+
+  <group if="$(arg rviz)">
+    <include file="$(find cubic_spline_ros)/launch/rviz.launch" />
+  </group>
+
+  <node
+    name="cubic_spline_demo"
+    pkg="cubic_spline_ros"
+    type="demo"
+    output="screen">
+    <rosparam file="$(find cubic_spline_ros)/config/path.yaml" command="load" />
+
+  </node>
+
+</launch>

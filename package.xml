@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>cubic_spline_ros</name>
+  <version>0.0.0</version>
+  <description>The cubic_spline_ros package</description>
+  <maintainer email="cai@todo.todo">cai</maintainer>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+
+  <export>
+  </export>
+</package>
