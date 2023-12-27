@@ -78,8 +78,7 @@ int main(int argc, char** argv)
   }
 
   // create a cubic spline interpolator
-  path_smoothing::CubicSplineInterpolator csi("lala");
-    // pointsPerUnit, skipPoints, useEndConditions, useMiddleConditions);
+  path_smoothing::CubicSplineInterpolator csi(pointsPerUnit, skipPoints, useEndConditions, useMiddleConditions);
   csi.interpolatePath(path, smoothedPath);
 
   initialPosePub.publish(path.poses.front());
